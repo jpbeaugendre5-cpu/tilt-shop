@@ -1,0 +1,20 @@
+TILT.SHOP — Liste des réglages à définir dans un fichier .env à la racine
+
+============================================================
+OBLIGATOIRE
+============================================================
+- Connexion base de données MySQL 8+ : chaîne de type
+  mysql://utilisateur:motdepasse@hote:3306/tiltshop
+- Clé secrète de session : longue chaîne aléatoire
+  (générer avec la commande : openssl rand -hex 32)
+- Numéro de port du serveur : souvent imposé par l'hébergeur (ex : 3000)
+
+============================================================
+SERVICES MANUS (à remplacer par vos services si vous quittez Manus)
+============================================================
+- Identifiant application + adresses du portail de connexion (authentification)
+- Adresse et clé du moteur IA (chatbot et recommandations) — ex : clé OpenAI
+- Identifiant et nom du propriétaire (promotion automatique en admin)
+- Titre et logo de la boutique (personnalisation)
+
+Les noms exacts des clés sont détaillés dans GUIDE_DEPLOIEMENT.md, section 3.
